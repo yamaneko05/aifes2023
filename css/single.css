@@ -1,0 +1,24 @@
+main .content div {
+  margin-bottom: 40px;
+}
+main .content p, main .content h1, main .content h2, main .content h3, main .content h4, main .content h5 {
+  margin-bottom: 0.2em;
+}
+main .content h2 {
+  font-size: 24px;
+  padding: 20px 10px;
+  background-image: linear-gradient(90deg, rgb(210, 153, 194), rgb(255, 247, 194));
+}
+main .content p {
+  line-height: 200%;
+}
+main .content a {
+  text-decoration: underline;
+}
+main .content ul {
+  padding-left: 24px;
+}
+main .content li {
+  line-height: 200%;
+  list-style: disc;
+}

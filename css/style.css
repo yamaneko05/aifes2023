@@ -1,0 +1,294 @@
+@font-face {
+  font-family: "insta0";
+  src: url("../font/CP Font.otf") format("opentype");
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: #fffffe;
+  color: #2d334a;
+}
+
+a {
+  text-decoration: none;
+  color: #2d334a;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  padding: 0 12px;
+}
+
+.button {
+  width: fit-content;
+  margin: 40px auto 0;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding: 12px 40px;
+  border: 2px solid #2d334a;
+  border-radius: 12px;
+}
+
+.tag {
+  background-color: #bae8e8;
+  padding: 5px 6px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.breadcrumbs {
+  padding: 6px 0;
+}
+
+#head {
+  padding: 40px 0;
+}
+#head h1 img {
+  width: 36px;
+  height: 36px;
+}
+
+#application {
+  text-align: center;
+  margin-bottom: 80px;
+}
+#application .head {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#application a {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ffd803;
+  color: #272343;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+#application .text p {
+  line-height: 150%;
+}
+#application .text p:first-child {
+  margin-bottom: 10px;
+}
+#application .text p span {
+  font-weight: bold;
+}
+
+header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header .container {
+  max-width: 450px;
+  margin: 0 auto;
+  height: 60px;
+  background-color: #fffffe;
+  text-align: center;
+  position: relative;
+}
+header .container .instagram {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 20px;
+}
+header .container .logo {
+  display: inline-block;
+}
+header .container .logo img {
+  height: 60px;
+}
+header .container .hamburger {
+  position: relative;
+  top: 12px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+}
+header .container .hamburger p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+header .container .hamburger .toggle_btn {
+  position: relative;
+  width: 40px;
+  height: 22px;
+}
+header .container .hamburger .toggle_btn span {
+  width: 100%;
+  height: 2px;
+  background-color: #2d334a;
+  position: absolute;
+  left: 0;
+  transition: all 0.5s 0s ease;
+}
+header .container .hamburger .toggle_btn span:first-child {
+  top: 0;
+}
+header .container .hamburger .toggle_btn span:nth-child(2) {
+  top: calc(50% - 1px);
+}
+header .container .hamburger .toggle_btn span:last-child {
+  bottom: 0;
+}
+header .container .hamburger .toggle_btn.open span:first-child {
+  top: calc(50% - 1px);
+  transform: rotateZ(135deg);
+}
+header .container .hamburger .toggle_btn.open span:nth-child(2) {
+  opacity: 0;
+}
+header .container .hamburger .toggle_btn.open span:last-child {
+  top: calc(50% - 1px);
+  transform: rotateZ(-135deg);
+}
+header .container nav {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  background-color: #fffffe;
+}
+header .container nav li {
+  padding: 12px 0;
+  font-size: 20px;
+}
+
+main {
+  padding-bottom: 80px;
+}
+
+@media (max-width: 350px) {
+  main {
+    margin-top: 12px;
+  }
+}
+@media (min-width: 350px) {
+  main {
+    margin-top: 36px;
+  }
+}
+footer {
+  background-color: #e3f6f5;
+}
+footer .content {
+  text-align: center;
+  padding-top: 10px;
+}
+footer .content .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+footer .content .logo img {
+  height: 60px;
+}
+footer .content .instagram {
+  margin-bottom: 20px;
+  background-color: #fffffe;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .content .instagram img {
+  width: 60px;
+  margin-right: 10px;
+}
+footer .content ul {
+  border-top: 1px solid #2d334a;
+}
+footer .content li {
+  padding: 10px 0;
+  border-bottom: 1px solid #2d334a;
+  font-weight: bold;
+}
+footer .copyright {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.comments p.no-comment {
+  margin-bottom: 20px;
+}
+.comments p.lets-comment {
+  margin-bottom: 20px;
+}
+.comments p.lets-comment span {
+  background: linear-gradient(transparent 60%, #ff6 60%);
+}
+.comments ul {
+  margin-bottom: 40px;
+}
+.comments ul li {
+  padding: 5px 10px 10px;
+  box-shadow: 0px 0px 15px -5px #777777;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.comments ul li .comment-author {
+  display: flex;
+  align-items: center;
+}
+.comments ul li .comment-author img {
+  margin-right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #2d334a;
+}
+.comments ul li .comment-author .fn {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  transform: translateY(-5px);
+}
+.comments ul li .comment-author .says {
+  display: none;
+}
+.comments ul li .comment-meta {
+  font-size: 14px;
+}
+.comments ul li .comment-meta span {
+  font-weight: bold;
+}
+.comments ul li p {
+  font-size: 18px;
+  padding: 15px 0 5px;
+}
+.comments ul li .wpulike {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0;
+}
+.comments ul li .reply {
+  display: none;
+}
+.comments ul li .from {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.comments ul li .from span {
+  font-weight: bold;
+}

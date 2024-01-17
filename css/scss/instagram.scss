@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@900&display=swap');
+
+form {
+  input, select {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #000;
+  }
+}
+button {
+  display: block;
+  background-color: yellow;
+}
+textarea {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #000;
+  padding: 5px;
+}
+section { padding-block: 20px;}
+
+.frame {
+  width: 350px; height: 350px;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 15px;
+  }
+}
+
+.insta0 {
+  padding-top: 50px;
+  background: url(../img/insta0.jpg) center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  color: #fff;
+  font-weight: 900;
+  -webkit-text-stroke: #000 1px;
+  font-size: 42px;
+  &::before {
+    border: 2px solid #fff;
+  }
+  .title {
+    text-align: center;
+    font-family: insta0;
+  }
+  .count {
+    width: 300px;
+    text-align: right;
+    strong {
+      font-size: 72px;
+      line-height: 72px;
+      color: transparent;
+      -webkit-text-stroke: #fff 1px;
+    }
+  }
+}
+
+ul.insta1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  li {
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    &::before { border: 4px dotted #fff;}
+    &:nth-child(4n+1),
+    &:nth-child(4n) {
+      background-color: #88aec1;
+      color: #fff;
+    }
+    &:nth-child(4n+2),
+    &:nth-child(4n+3) {
+      color: #88aec1;
+      &::before {
+        border-color: #88aec1;
+      }
+    }
+    p.title {
+      font-size: 36px;
+    }
+    .tags { margin-block: 10px; font-family: 'Noto Sans JP';}
+    .detail {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+    }
+    img {
+      position: absolute;
+      right: 30px; bottom: 30px;
+      width: 250px; height: 130px;
+      border-radius: 50px;
+    }
+  }
+}

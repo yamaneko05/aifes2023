@@ -1,0 +1,24 @@
+@use "color" as *;
+
+.ereas_parent {
+  >li {
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin-bottom: 8px;
+  }
+}
+
+.ereas {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  > li {
+    border: 2px solid $color-p;
+    padding: 10px;
+    a {display: block;}
+  }
+}

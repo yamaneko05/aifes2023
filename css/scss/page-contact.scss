@@ -1,0 +1,28 @@
+@use "./color.scss" as *;
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid $color-p;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  background-color: $color-button;
+  color: $color-buttontext;
+  padding: 10px 0;
+}
